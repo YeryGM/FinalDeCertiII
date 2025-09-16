@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">sept 15, 2025 11:31:46 p. m.</span></a>
+<a href="#"><span class="badge badge-primary">sept 16, 2025 05:00:12 p. m.</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">Employees endpoint</p>
             <p class="text-sm">
-              <span>11:31:47 p. m.</span> / <span>00:00:41:535</span>
+              <span>5:00:13 p. m.</span> / <span>00:00:39:086</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Employees endpoint</h5>
-<span class='badge badge-success'>09.15.2025 11:31:47 p. m.</span>
-<span class='badge badge-danger'>09.15.2025 11:32:28 p. m.</span>
-<span class='badge badge-default'>00:00:41:535</span>
+<span class='badge badge-success'>09.16.2025 5:00:13 p. m.</span>
+<span class='badge badge-danger'>09.16.2025 5:00:52 p. m.</span>
+<span class='badge badge-default'>00:00:39:086</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -110,34 +110,13 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>/bookingid should return all the bookingid</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>/booking/{id} should return a booking with the id given</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.BookingSteps.getEmployees()">
-                <span>Given I perform a GET call to the employees endpoint</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.BookingSteps.verifyStatusCode(int)">
-                <span>Then I verify that the status code is 200</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>/booking/{id} should return an specific booking</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.BookingSteps.getEmployeesById(java.lang.String)">
-                <span>Given I perform a GET call to the employees endpoint with id "3"</span>
+              <div class="step pass-bg" title="stepDefinitions.BookingSteps.getBookingById(java.lang.String)">
+                <span>Given I perform a GET call to the employees endpoint with id "100"</span>
       <div>
       </div>
               </div>
@@ -166,12 +145,12 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>/booking/{id} should no return an specific booking with an id that does not exist</div>
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>/booking/{id} must not return an specific booking with an id that does not exist</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.BookingSteps.getEmployeesById(java.lang.String)">
+              <div class="step pass-bg" title="stepDefinitions.BookingSteps.getBookingById(java.lang.String)">
                 <span>Given I perform a GET call to the employees endpoint with id "99999"</span>
       <div>
       </div>
@@ -192,20 +171,20 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>/create should create a new booking</div>
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>/create should create a new booking</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="15"><span class="badge log fail-bg mr-2">Fail</span>/create should create a new booking</div>
+                  <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>/create should create a new booking</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>Given I perform a POST call to the create endpoint with the following data</span>
-      <div><table class='markup-table table '><tr><td>diana</td><td>gandarillas</td><td>346</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table>
+      <div><table class='markup-table table '><tr><td>Yery</td><td>Gallardo</td><td>500</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table>
       </div>
       <div>
       </div>
@@ -238,24 +217,24 @@ Expected status code <200> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 200(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:31)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 200(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:25)
 </textarea>
       
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>And I verify that the field "booking.firstname" contains "diana"</span>
+                    <span>And I verify that the field "booking.firstname" contains "Yery"</span>
       <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>And I verify that the field "booking.lastname" contains "gandarillas"</span>
+                    <span>And I verify that the field "booking.lastname" contains "Gallardo"</span>
       <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>And I verify that the field "booking.totalprice" contains "346"</span>
+                    <span>And I verify that the field "booking.totalprice" contains "500"</span>
       <div>Step skipped
       </div>
                   </div>
@@ -265,12 +244,12 @@ Expected status code <200> but was <418>.
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>And I verify that the field "booking.bookingdates.checkin" contains "2018-01-01"</span>
+                    <span>And I verify that the field "booking.bookingdates.checkin" contains "2004-12-14"</span>
       <div>Step skipped
       </div>
                   </div>
                   <div class="step skip-bg">
-                    <span>And I verify that the field "booking.bookingdates.checkout" contains "2018-01-01"</span>
+                    <span>And I verify that the field "booking.bookingdates.checkout" contains "2004-12-16"</span>
       <div>Step skipped
       </div>
                   </div>
@@ -286,20 +265,20 @@ Expected status code <200> but was <418>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>/create should not create a new booking</div>
+        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>/create must not create a new Booking</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>/create should not create a new booking</div>
+                  <div class="node" id="23"><span class="badge log fail-bg mr-2">Fail</span>/create must not create a new Booking</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>Given I perform a POST call to the create endpoint with the following data</span>
-      <div><table class='markup-table table '><tr><td>123</td><td>gandarillas</td><td>346</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table>
+      <div><table class='markup-table table '><tr><td>123</td><td>Gallardo</td><td>500</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table>
       </div>
       <div>
       </div>
@@ -330,8 +309,8 @@ Expected status code <400> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 400(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:48)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 400(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:42)
 </textarea>
       
       </div>
@@ -341,13 +320,13 @@ Expected status code <400> but was <418>.
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>/create should not create a new booking</div>
+                  <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>/create must not create a new Booking</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>Given I perform a POST call to the create endpoint with the following data</span>
-      <div><table class='markup-table table '><tr><td>juan</td><td>gandarillas</td><td>346</td><td>23</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table>
+      <div><table class='markup-table table '><tr><td>Nao</td><td>Arcienega</td><td>346</td><td>23</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table>
       </div>
       <div>
       </div>
@@ -378,8 +357,8 @@ Expected status code <400> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 400(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:48)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 400(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:42)
 </textarea>
       
       </div>
@@ -389,13 +368,13 @@ Expected status code <400> but was <418>.
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="32"><span class="badge log fail-bg mr-2">Fail</span>/create should not create a new booking</div>
+                  <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>/create must not create a new Booking</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>Given I perform a POST call to the create endpoint with the following data</span>
-      <div><table class='markup-table table '><tr><td>cami</td><td>gandarillas</td><td>prueba</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table>
+      <div><table class='markup-table table '><tr><td>Naty</td><td>Gallardo</td><td>Hola</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table>
       </div>
       <div>
       </div>
@@ -426,8 +405,8 @@ Expected status code <400> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 400(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:48)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 400(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:42)
 </textarea>
       
       </div>
@@ -480,9 +459,9 @@ Expected status code <400> but was <418>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:32:11 p. m.</td>
+<td>17:00:34 p. m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='17'>Then I verify that the status code is 200</a>
+<a href="#" class="linked" test-id='1' id='14'>Then I verify that the status code is 200</a>
 <div class="">
 <span class="badge badge-default">Employees endpoint./create should create a new booking.Then I verify that the status code is 200</span>
 </div>
@@ -490,31 +469,31 @@ Expected status code <400> but was <418>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:32:17 p. m.</td>
+<td>17:00:40 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Then I verify that the status code is 400</a>
+<div class="">
+<span class="badge badge-default">Employees endpoint./create must not create a new Booking.Then I verify that the status code is 400</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:00:46 p. m.</td>
 <td>
 <a href="#" class="linked" test-id='1' id='28'>Then I verify that the status code is 400</a>
 <div class="">
-<span class="badge badge-default">Employees endpoint./create should not create a new booking.Then I verify that the status code is 400</span>
+<span class="badge badge-default">Employees endpoint./create must not create a new Booking.Then I verify that the status code is 400</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>23:32:23 p. m.</td>
+<td>17:00:52 p. m.</td>
 <td>
 <a href="#" class="linked" test-id='1' id='31'>Then I verify that the status code is 400</a>
 <div class="">
-<span class="badge badge-default">Employees endpoint./create should not create a new booking.Then I verify that the status code is 400</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>23:32:28 p. m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='34'>Then I verify that the status code is 400</a>
-<div class="">
-<span class="badge badge-default">Employees endpoint./create should not create a new booking.Then I verify that the status code is 400</span>
+<span class="badge badge-default">Employees endpoint./create must not create a new Booking.Then I verify that the status code is 400</span>
 </div>
 </td>
 </tr>
@@ -535,13 +514,13 @@ Expected status code <400> but was <418>.
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>sept 15, 2025 11:31:46 p. m.</h3>
+<h3>sept 16, 2025 05:00:12 p. m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>sept 15, 2025 11:32:28 p. m.</h3>
+<h3>sept 16, 2025 05:00:52 p. m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -592,9 +571,9 @@ Expected status code <400> but was <418>.
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='42%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='33%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='57%'><b>4</b> scenarios failed,
+<small data-tooltip='66%'><b>4</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -612,9 +591,9 @@ Expected status code <400> but was <418>.
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='54%'><b>13</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>11</b> steps passed</small></div>
 <div>
-<small data-tooltip='16%'><b>4</b> steps failed,
+<small data-tooltip='18%'><b>4</b> steps failed,
 <b>7</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -631,7 +610,7 @@ Expected status code <400> but was <418>.
 </div></div>
 <script>
 var timeline = {
-"Employees endpoint":41.535
+"Employees endpoint":39.086
 };
 </script>
 <div class="row">
@@ -645,13 +624,13 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
+passChild: 2,
 failChild: 4,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 13,
+passGrandChild: 11,
 failGrandChild: 4,
 warningGrandChild: 0,
 skipGrandChild: 7,

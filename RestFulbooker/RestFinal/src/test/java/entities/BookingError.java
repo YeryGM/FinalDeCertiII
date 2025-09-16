@@ -2,7 +2,7 @@ package entities;
 import lombok.Getter;
 import lombok.Setter;
 
-public class BookingFail {
+public class BookingError {
     @Getter
     @Setter
     private int firstname;

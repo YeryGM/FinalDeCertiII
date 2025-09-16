@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>sept 15, 2025 11:31:46 p. m.</span>
+			<span class='label blue darken-3 suite-start-time'>sept 16, 2025 05:00:12 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -126,11 +126,11 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='42%'>
-                    <span class='strong'>3</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='33%'>
+                    <span class='strong'>2</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='57%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
                     4</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
@@ -146,13 +146,13 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='54%'>
-                    <span class='strong'>13</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'>
+                    <span class='strong'>11</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='18%'>
                     4</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='29%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='31%'>
                     7</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
@@ -177,7 +177,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Employees endpoint</span>
-						<span class='test-time'>sept 15, 2025 11:31:47 p. m.</span>
+						<span class='test-time'>sept 16, 2025 05:00:13 p. m.</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -190,16 +190,16 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 06.934</span>
+	<span class='duration right label'>00 00 07.876</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: /bookingid should return all the bookingid</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: /booking/{id} should return a booking with the id given</div>
 	</div>
 	
 	
 	
 	<ul class='steps'>
 		<li test-id='3' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.BookingSteps.getEmployees())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a GET call to the employees endpoint</div>
+			<div class="step-name" title="(stepDefinitions.BookingSteps.getBookingById(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a GET call to the employees endpoint with id "100"</div>
 
 
 		</li>
@@ -208,35 +208,13 @@
 
 
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='5' status='pass'>
-
-	<span class='duration right label'>00 00 06.070</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: /booking/{id} should return an specific booking</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='6' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.BookingSteps.getEmployeesById(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a GET call to the employees endpoint with id "3"</div>
-
-
-		</li>
-		<li test-id='7' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.BookingSteps.verifyStatusCode(int))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that the status code is 200</div>
-
-
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
+		<li test-id='5' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.BookingSteps.verifyRootFields(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify that the following fields are present in the root</div>
 
 
 					<div class="node-step"><table class='markup-table table '><tr><td>firstname</td><td>lastname</td><td>totalprice</td><td>depositpaid</td><td>bookingdates</td><td>additionalneeds</td></tr></table></div>
 		</li>
-		<li test-id='9' class='node and Pass' status='Pass'>
+		<li test-id='6' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.BookingSteps.verifyFieldsInsideKey(java.lang.String,io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I verify that the following fields are present inside "bookingdates"</div>
 
 
@@ -244,55 +222,55 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='pass'>
+<div class='scenario node' test-id='7' status='pass'>
 
-	<span class='duration right label'>00 00 05.657</span>
+	<span class='duration right label'>00 00 05.701</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: /booking/{id} should no return an specific booking with an id that does not exist</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: /booking/{id} must not return an specific booking with an id that does not exist</div>
 	</div>
 	
 	
 	
 	<ul class='steps'>
-		<li test-id='11' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinitions.BookingSteps.getEmployeesById(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a GET call to the employees endpoint with id "99999"</div>
+		<li test-id='8' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.BookingSteps.getBookingById(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a GET call to the employees endpoint with id "99999"</div>
 
 
 		</li>
-		<li test-id='12' class='node then Pass' status='Pass'>
+		<li test-id='9' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.BookingSteps.verifyStatusCode(int))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I verify that the status code is 404</div>
 
 
 		</li>
-		<li test-id='13' class='node and Pass' status='Pass'>
+		<li test-id='10' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.BookingSteps.verifyErrorMessage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify that it displays the message "Not Found"</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='14' status='fail'>
+<div class='scenario outline node' test-id='11' status='fail'>
 
-	<span class='duration right label'>00 00 05.830</span>
+	<span class='duration right label'>00 00 08.020</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: /create should create a new booking</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>firstname</td><td>lasttname</td><td>totalprice</td><td>depositpaid</td><td>checkin</td><td>checkout</td><td>additionalneeds</td></tr><tr><td>diana</td><td>gandarillas</td><td>346</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>firstname</td><td>lasttname</td><td>totalprice</td><td>depositpaid</td><td>checkin</td><td>checkout</td><td>additionalneeds</td></tr><tr><td>Yery</td><td>Gallardo</td><td>500</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='15' class='node scenario Fail' status='Fail'>
+		<li test-id='12' class='node scenario Fail' status='Fail'>
 			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create should create a new booking</div>
 
 
 			<ul class='gc steps'>
-				<li test-id='16' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.postEmployee(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
+				<li test-id='13' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.postBooking(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
 
-							<div class="node-step"><table class='markup-table table '><tr><td>diana</td><td>gandarillas</td><td>346</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
+							<div class="node-step"><table class='markup-table table '><tr><td>Yery</td><td>Gallardo</td><td>500</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table></div>
 				</li>
-				<li test-id='17' class='gc then Fail' status='Fail'>
+				<li test-id='14' class='gc then Fail' status='Fail'>
 					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyStatusCode(int)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I verify that the status code is 200</h6>
 
 							<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -320,41 +298,41 @@ Expected status code <200> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 200(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:31)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 200(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:25)
 </textarea>
 				</li>
+				<li test-id='15' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.firstname" contains "Yery"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='16' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.lastname" contains "Gallardo"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='17' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.totalprice" contains "500"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
 				<li test-id='18' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.firstname" contains "diana"</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='19' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.lastname" contains "gandarillas"</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='20' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.totalprice" contains "346"</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='21' class='gc and Skip' status='Skip'>
 					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.depositpaid" contains "true"</h6>
 
 							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='22' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.bookingdates.checkin" contains "2018-01-01"</h6>
+				<li test-id='19' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.bookingdates.checkin" contains "2004-12-14"</h6>
 
 							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='23' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.bookingdates.checkout" contains "2018-01-01"</h6>
+				<li test-id='20' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "booking.bookingdates.checkout" contains "2004-12-16"</h6>
 
 							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='24' class='gc and Skip' status='Skip'>
+				<li test-id='21' class='gc and Skip' status='Skip'>
 					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyFieldsValues(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I verify that the field "additionalneeds" contains "breakfast"</h6>
 
 							<div class="node-step">Step skipped</div>
@@ -363,26 +341,68 @@ Expected status code <200> but was <418>.
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='25' status='fail'>
+<div class='scenario outline node' test-id='22' status='fail'>
 
-	<span class='duration right label'>00 00 17.020</span>
+	<span class='duration right label'>00 00 17.472</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: /create should not create a new booking</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: /create must not create a new Booking</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>firstname</td><td>lasttname</td><td>totalprice</td><td>depositpaid</td><td>checkin</td><td>checkout</td><td>additionalneeds</td></tr><tr><td>123</td><td>gandarillas</td><td>346</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr><tr><td>juan</td><td>gandarillas</td><td>346</td><td>23</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr><tr><td>cami</td><td>gandarillas</td><td>prueba</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>firstname</td><td>lasttname</td><td>totalprice</td><td>depositpaid</td><td>checkin</td><td>checkout</td><td>additionalneeds</td></tr><tr><td>123</td><td>Gallardo</td><td>500</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr><tr><td>Nao</td><td>Arcienega</td><td>346</td><td>23</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr><tr><td>Naty</td><td>Gallardo</td><td>Hola</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table></div>
 	
 	
 	<ul class='steps'>
+		<li test-id='23' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create must not create a new Booking</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='24' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.postBooking(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
+
+							<div class="node-step"><table class='markup-table table '><tr><td>123</td><td>Gallardo</td><td>500</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table></div>
+				</li>
+				<li test-id='25' class='gc then Fail' status='Fail'>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyStatusCode(int)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I verify that the status code is 400</h6>
+
+							<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <418>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 400(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:42)
+</textarea>
+				</li>
+			</ul>
+		</li>
 		<li test-id='26' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create should not create a new booking</div>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create must not create a new Booking</div>
 
 
 			<ul class='gc steps'>
 				<li test-id='27' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.postEmployee(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.postBooking(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
 
-							<div class="node-step"><table class='markup-table table '><tr><td>123</td><td>gandarillas</td><td>346</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
+							<div class="node-step"><table class='markup-table table '><tr><td>Nao</td><td>Arcienega</td><td>346</td><td>23</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
 				</li>
 				<li test-id='28' class='gc then Fail' status='Fail'>
 					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyStatusCode(int)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I verify that the status code is 400</h6>
@@ -410,21 +430,21 @@ Expected status code <400> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 400(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:48)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 400(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:42)
 </textarea>
 				</li>
 			</ul>
 		</li>
 		<li test-id='29' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create should not create a new booking</div>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create must not create a new Booking</div>
 
 
 			<ul class='gc steps'>
 				<li test-id='30' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.postEmployee(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
+					<h6 class="step-name" title="stepDefinitions.BookingSteps.postBooking(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
 
-							<div class="node-step"><table class='markup-table table '><tr><td>juan</td><td>gandarillas</td><td>346</td><td>23</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
+							<div class="node-step"><table class='markup-table table '><tr><td>Naty</td><td>Gallardo</td><td>Hola</td><td>true</td><td>2004-12-14</td><td>2004-12-16</td><td>breakfast</td></tr></table></div>
 				</li>
 				<li test-id='31' class='gc then Fail' status='Fail'>
 					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyStatusCode(int)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I verify that the status code is 400</h6>
@@ -452,50 +472,8 @@ Expected status code <400> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 400(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:48)
-</textarea>
-				</li>
-			</ul>
-		</li>
-		<li test-id='32' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>/create should not create a new booking</div>
-
-
-			<ul class='gc steps'>
-				<li test-id='33' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.postEmployee(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I perform a POST call to the create endpoint with the following data</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>cami</td><td>gandarillas</td><td>prueba</td><td>true</td><td>2018-01-01</td><td>2018-01-01</td><td>breakfast</td></tr></table></div>
-				</li>
-				<li test-id='34' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="stepDefinitions.BookingSteps.verifyStatusCode(int)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I verify that the status code is 400</h6>
-
-							<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <418>.
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 400(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:48)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 400(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:42)
 </textarea>
 				</li>
 			</ul>
@@ -561,8 +539,8 @@ Expected status code <400> but was <418>.
 								</thead>
 								<tbody>
 									<tr>
-										<td>sept 15, 2025 11:32:11 p. m.</td>
-										<td class='linked' test-id='17'>Then I verify that the status code is 200</td>
+										<td>sept 16, 2025 05:00:34 p. m.</td>
+										<td class='linked' test-id='14'>Then I verify that the status code is 200</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
 Expected status code <200> but was <418>.
@@ -589,13 +567,47 @@ Expected status code <200> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 200(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:31)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 200(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:25)
 </textarea>
 										</td>
 									</tr>
 									<tr>
-										<td>sept 15, 2025 11:32:17 p. m.</td>
+										<td>sept 16, 2025 05:00:40 p. m.</td>
+										<td class='linked' test-id='25'>Then I verify that the status code is 400</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <418>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 200(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:25)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>sept 16, 2025 05:00:46 p. m.</td>
 										<td class='linked' test-id='28'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -623,13 +635,13 @@ Expected status code <200> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 200(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:31)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 200(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:25)
 </textarea>
 										</td>
 									</tr>
 									<tr>
-										<td>sept 15, 2025 11:32:23 p. m.</td>
+										<td>sept 16, 2025 05:00:52 p. m.</td>
 										<td class='linked' test-id='31'>Then I verify that the status code is 400</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
@@ -657,42 +669,8 @@ Expected status code <200> but was <418>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 200(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:31)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>sept 15, 2025 11:32:28 p. m.</td>
-										<td class='linked' test-id='34'>Then I verify that the status code is 400</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <418>.
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:28)
-	at ✽.I verify that the status code is 200(file:///C:/Users/Diana/Documents/certificacion2/RepoFinal/RestFinal/src/test/resources/Booking.feature:31)
+	at stepDefinitions.BookingSteps.verifyStatusCode(BookingSteps.java:23)
+	at ✽.I verify that the status code is 200(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/RestFulbooker/RestFinal/src/test/resources/Booking.feature:25)
 </textarea>
 										</td>
 									</tr>
@@ -724,31 +702,31 @@ Expected status code <200> but was <418>.
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>24</div>
+					<div class='panel-lead'>22</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>sept 15, 2025 11:31:46 p. m.</div>
+					<div class='panel-lead'>sept 16, 2025 05:00:12 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>sept 15, 2025 11:32:28 p. m.</div>
+			 		<div class='panel-lead'>sept 16, 2025 05:00:52 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 41.932</div>
+					<div class='panel-lead'>00 00 39.671</div>
 				</div>
 			</div>
 		</div>
@@ -766,16 +744,16 @@ Expected status code <200> but was <418>.
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 7,
-				passChild: 3,
+				childCount: 6,
+				passChild: 2,
 				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 24,
-				passGrandChild: 13,
+				grandChildCount: 22,
+				passGrandChild: 11,
 				failGrandChild: 4,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -787,7 +765,7 @@ Expected status code <200> but was <418>.
 		
 		<script>
 			var timeline = {
-			        "Employees endpoint":41.535
+			        "Employees endpoint":39.086
 			};
 		</script>
 		
