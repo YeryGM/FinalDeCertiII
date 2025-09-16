@@ -27,10 +27,10 @@ Feature: Checkout feature
     Then I should see the error message "<error_message>"
 
     Examples:
-      | field        | error_message            |
-      | First Name   | First Name is required   |
-      | Last Name    | Last Name is required    |
-      | Zip Code     | Postal Code is required  |
+      | field        | error_message                 |
+      | First Name   | Error: First Name is required |
+      | Last Name    | Error: Last Name is required  |
+      | Zip Code     | Error: Postal Code is required|
 
   Scenario: Checkout with multiple products and verification of totals
     Given The home page should be displayed

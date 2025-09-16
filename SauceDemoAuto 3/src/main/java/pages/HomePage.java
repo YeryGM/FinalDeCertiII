@@ -44,8 +44,7 @@ public class HomePage {
     }
 
     public void addProductToCart(String productName){
-        //add-to-cart-Sauce-Labs-Backpack
-        // add-to-cart-sauce-labs-backpack
+
         String productId = "add-to-cart-"+productName.replace(" ", "-").toLowerCase();
         WebElement addToCartButton = driver.findElement(By.id(productId));
         addToCartButton.click();

@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>sep. 16, 2025 02:51:19 p. m.</span>
+			<span class='label blue darken-3 suite-start-time'>sep. 16, 2025 04:18:11 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -109,12 +109,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$33%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$66%'>
+                    <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
-                    2</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -127,12 +127,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='70%'>
-                    <span class='strong'>12</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='94%'>
+                    <span class='strong'>16</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='29%'>
-                    5</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -147,12 +147,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='96%'>
-                    <span class='strong'>132</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='99%'>
+                    <span class='strong'>136</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='3%'>
-                    5</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    1</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -175,11 +175,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Checkout feature</span>
-						<span class='test-time'>sep. 16, 2025 02:51:20 p. m.</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>sep. 16, 2025 04:18:12 p. m.</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,7 +191,7 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 04.783</span>
+	<span class='duration right label'>00 00 07.089</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User can checkout a purchase</div>
 	</div>
@@ -262,19 +262,19 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='16' status='fail'>
+<div class='scenario outline node' test-id='16' status='pass'>
 
-	<span class='duration right label'>00 00 11.437</span>
+	<span class='duration right label'>00 00 19.092</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Validation of required fields in checkout</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Validation of required fields in checkout</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>field</td><td>error_message</td></tr><tr><td>First Name</td><td>First Name is required</td></tr><tr><td>Last Name</td><td>Last Name is required</td></tr><tr><td>Zip Code</td><td>Postal Code is required</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>field</td><td>error_message</td></tr><tr><td>First Name</td><td>Error: First Name is required</td></tr><tr><td>Last Name</td><td>Error: Last Name is required</td></tr><tr><td>Zip Code</td><td>Error: Postal Code is required</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='17' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Validation of required fields in checkout</div>
+		<li test-id='17' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Validation of required fields in checkout</div>
 
 
 			<ul class='gc steps'>
@@ -318,46 +318,14 @@
 					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.clickOnContinue()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the continue button</h6>
 
 				</li>
-				<li test-id='28' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I should see the error message "First Name is required"</h6>
+				<li test-id='28' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I should see the error message "Error: First Name is required"</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20681d0cc772ed9beb4fef4d527716b3, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62170/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20681d0cc772ed9beb4fef4d527716b3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "First Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
 				</li>
 			</ul>
 		</li>
-		<li test-id='30' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Validation of required fields in checkout</div>
+		<li test-id='30' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Validation of required fields in checkout</div>
 
 
 			<ul class='gc steps'>
@@ -401,46 +369,14 @@ Session ID: 20681d0cc772ed9beb4fef4d527716b3
 					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.clickOnContinue()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the continue button</h6>
 
 				</li>
-				<li test-id='41' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I should see the error message "Last Name is required"</h6>
+				<li test-id='41' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I should see the error message "Error: Last Name is required"</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac1980b3da768f065db109a206742741, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ac1980b3da768f065db109a206742741
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "Last Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
 				</li>
 			</ul>
 		</li>
-		<li test-id='43' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Validation of required fields in checkout</div>
+		<li test-id='43' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Validation of required fields in checkout</div>
 
 
 			<ul class='gc steps'>
@@ -484,51 +420,19 @@ Session ID: ac1980b3da768f065db109a206742741
 					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.clickOnContinue()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on the continue button</h6>
 
 				</li>
-				<li test-id='54' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I should see the error message "Postal Code is required"</h6>
+				<li test-id='54' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I should see the error message "Error: Postal Code is required"</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4e10d3cea6cbc00aab6101b0d252d4bc, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62296/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4e10d3cea6cbc00aab6101b0d252d4bc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "Postal Code is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
 				</li>
 			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='56' status='fail'>
+<div class='scenario node' test-id='56' status='pass'>
 
-	<span class='duration right label'>00 00 08.424</span>
+	<span class='duration right label'>00 00 06.443</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Checkout with multiple products and verification of totals</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Checkout with multiple products and verification of totals</div>
 	</div>
 	
 	
@@ -615,48 +519,16 @@ Session ID: 4e10d3cea6cbc00aab6101b0d252d4bc
 
 
 		</li>
-		<li test-id='73' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(stepDefinitions.CheckoutCompleteSteps.verifyCompleteMessage(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then A message that says "Thank you for your order!" should be displayed</div>
+		<li test-id='73' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.CheckoutCompleteSteps.verifyCompleteMessage(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then A message that says "Thank you for your order!" should be displayed</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"h2.complete-header"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [966e516d57addb152746352eb4040e85, findElement {value=h2.complete-header, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62359/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 966e516d57addb152746352eb4040e85
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutCompletePage.verifyCompleteMessage(CheckoutCompletePage.java:20)
-	at stepDefinitions.CheckoutCompleteSteps.verifyCompleteMessage(CheckoutCompleteSteps.java:14)
-	at ✽.A message that says "Thank you for your order!" should be displayed(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:49)
-</textarea>
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='75' status='pass'>
 
-	<span class='duration right label'>00 00 03.740</span>
+	<span class='duration right label'>00 00 05.882</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Cancellation from information page</div>
 	</div>
@@ -718,7 +590,7 @@ Session ID: 966e516d57addb152746352eb4040e85
 </div>
 <div class='scenario node' test-id='87' status='pass'>
 
-	<span class='duration right label'>00 00 03.962</span>
+	<span class='duration right label'>00 00 06.027</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Cancellation from overview page</div>
 	</div>
@@ -794,7 +666,7 @@ Session ID: 966e516d57addb152746352eb4040e85
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='101'>
 					<div class='test-heading'>
 						<span class='test-name'>Home page</span>
-						<span class='test-time'>sep. 16, 2025 02:51:52 p. m.</span>
+						<span class='test-time'>sep. 16, 2025 04:18:56 p. m.</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -807,7 +679,7 @@ Session ID: 966e516d57addb152746352eb4040e85
 
 <div class='scenario outline node' test-id='102' status='pass'>
 
-	<span class='duration right label'>00 00 10.687</span>
+	<span class='duration right label'>00 00 16.801</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify that all products are displayed in home page</div>
 	</div>
@@ -916,7 +788,7 @@ Session ID: 966e516d57addb152746352eb4040e85
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='127'>
 					<div class='test-heading'>
 						<span class='test-name'>Login Sauce Demo App</span>
-						<span class='test-time'>sep. 16, 2025 02:52:03 p. m.</span>
+						<span class='test-time'>sep. 16, 2025 04:19:13 p. m.</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -929,7 +801,7 @@ Session ID: 966e516d57addb152746352eb4040e85
 
 <div class='scenario node' test-id='128' status='fail'>
 
-	<span class='duration right label'>00 00 03.580</span>
+	<span class='duration right label'>00 00 05.520</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Login into Sauce Demo with valid credentials</div>
 	</div>
@@ -961,15 +833,14 @@ Session ID: 966e516d57addb152746352eb4040e85
 			<div class="step-name" title="(stepDefinitions.HomeSteps.verifyHomePageIsDisplayed())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then The home page should be displayed</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".app_logo"}
-  (Session info: chrome=140.0.7339.128)
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: .app_logo
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71eff0447bc52ca289ac7238f2e3e5d9, findElement {value=app_logo, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62762}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62762/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 71eff0447bc52ca289ac7238f2e3e5d9
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3728dd2a-0704-413b-9da9-d013e0183001, findElement {using=class name, value=app_logo}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 49872, moz:profile: C:\Users\yeryg\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 3728dd2a-0704-413b-9da9-d013e0183001
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -991,14 +862,14 @@ Session ID: 71eff0447bc52ca289ac7238f2e3e5d9
 	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
 	at pages.HomePage.sauceDemoTitleIsDisplayed(HomePage.java:29)
 	at stepDefinitions.HomeSteps.verifyHomePageIsDisplayed(HomeSteps.java:15)
-	at ✽.The home page should be displayed(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/login.feature:10)
+	at ✽.The home page should be displayed(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/SauceDemoAuto%203/src/test/resources/login.feature:10)
 </textarea>
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='135' status='pass'>
 
-	<span class='duration right label'>00 00 03.195</span>
+	<span class='duration right label'>00 00 05.513</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login into Sauce Demo with invalid credentials</div>
 	</div>
@@ -1035,7 +906,7 @@ Session ID: 71eff0447bc52ca289ac7238f2e3e5d9
 </div>
 <div class='scenario outline node' test-id='142' status='pass'>
 
-	<span class='duration right label'>00 00 06.720</span>
+	<span class='duration right label'>00 00 11.124</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login into Sauce Demo with valid credentials</div>
 	</div>
@@ -1102,7 +973,7 @@ Session ID: 71eff0447bc52ca289ac7238f2e3e5d9
 </div>
 <div class='scenario outline node' test-id='157' status='pass'>
 
-	<span class='duration right label'>00 00 09.941</span>
+	<span class='duration right label'>00 00 16.679</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login into Sauce Demo with invalid credentials</div>
 	</div>
@@ -1239,7 +1110,7 @@ Session ID: 71eff0447bc52ca289ac7238f2e3e5d9
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>5</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -1253,170 +1124,17 @@ Session ID: 71eff0447bc52ca289ac7238f2e3e5d9
 								</thead>
 								<tbody>
 									<tr>
-										<td>sep. 16, 2025 02:51:29 p. m.</td>
-										<td class='linked' test-id='28'>Then I should see the error message "First Name is required"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20681d0cc772ed9beb4fef4d527716b3, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62170/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20681d0cc772ed9beb4fef4d527716b3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "First Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>sep. 16, 2025 02:51:32 p. m.</td>
-										<td class='linked' test-id='41'>Then I should see the error message "Last Name is required"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20681d0cc772ed9beb4fef4d527716b3, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62170/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20681d0cc772ed9beb4fef4d527716b3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "First Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>sep. 16, 2025 02:51:36 p. m.</td>
-										<td class='linked' test-id='54'>Then I should see the error message "Postal Code is required"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20681d0cc772ed9beb4fef4d527716b3, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62170/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20681d0cc772ed9beb4fef4d527716b3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "First Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>sep. 16, 2025 02:51:44 p. m.</td>
-										<td class='linked' test-id='73'>Then A message that says "Thank you for your order!" should be displayed</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20681d0cc772ed9beb4fef4d527716b3, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62170/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20681d0cc772ed9beb4fef4d527716b3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "First Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>sep. 16, 2025 02:52:06 p. m.</td>
+										<td>sep. 16, 2025 04:19:17 p. m.</td>
 										<td class='linked' test-id='133'>Then The home page should be displayed</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'First Name is required')]"}
-  (Session info: chrome=140.0.7339.128)
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: .app_logo
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20681d0cc772ed9beb4fef4d527716b3, findElement {value=//*[contains(text(), 'First Name is required')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\yeryg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62170/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20681d0cc772ed9beb4fef4d527716b3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [3728dd2a-0704-413b-9da9-d013e0183001, findElement {using=class name, value=app_logo}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 49872, moz:profile: C:\Users\yeryg\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 3728dd2a-0704-413b-9da9-d013e0183001
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1430,15 +1148,15 @@ Session ID: 20681d0cc772ed9beb4fef4d527716b3
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
-	at pages.CheckoutInformationPage.getErrorMessage(CheckoutInformationPage.java:57)
-	at stepDefinitions.CheckoutInformationSteps.verifyErrorMessage(CheckoutInformationSteps.java:51)
-	at ✽.I should see the error message "First Name is required"(file:///C:/Users/yeryg/Desktop/SauceDemoAuto%203/src/test/resources/checkout.feature:27)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at pages.HomePage.sauceDemoTitleIsDisplayed(HomePage.java:29)
+	at stepDefinitions.HomeSteps.verifyHomePageIsDisplayed(HomeSteps.java:15)
+	at ✽.The home page should be displayed(file:///C:/Users/yeryg/Desktop/FinalDeCertiII/SauceDemoAuto%203/src/test/resources/login.feature:10)
 </textarea>
 										</td>
 									</tr>
@@ -1482,19 +1200,19 @@ Session ID: 20681d0cc772ed9beb4fef4d527716b3
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>sep. 16, 2025 02:51:19 p. m.</div>
+					<div class='panel-lead'>sep. 16, 2025 04:18:11 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>sep. 16, 2025 02:52:27 p. m.</div>
+			 		<div class='panel-lead'>sep. 16, 2025 04:19:52 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 07.114</div>
+					<div class='panel-lead'>00 01 40.960</div>
 				</div>
 			</div>
 		</div>
@@ -1506,23 +1224,23 @@ Session ID: 20681d0cc772ed9beb4fef4d527716b3
 		<script>
 			var statusGroup = {
                 parentCount: 3,
-				passParent: 1,
-				failParent: 2,
+				passParent: 2,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 17,
-				passChild: 12,
-				failChild: 5,
+				passChild: 16,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				grandChildCount: 137,
-				passGrandChild: 132,
-				failGrandChild: 5,
+				passGrandChild: 136,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -1533,7 +1251,7 @@ Session ID: 20681d0cc772ed9beb4fef4d527716b3
 		
 		<script>
 			var timeline = {
-			        "Checkout feature":32.378,"Home page":10.687,"Login Sauce Demo App":23.445
+			        "Checkout feature":44.552,"Home page":16.802,"Login Sauce Demo App":38.852
 			};
 		</script>
 		
